@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size:200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="con"></div>
+    <div id="birth"></div>
+    <div id ="text"></div>
+    <img src="https://media.tenor.com/bWUeVRqW9-IAAAAj/fast-cat-cat-excited.gif" alt="" id="hello" style="display: none; width: 400px; height: 500px; margin-left: 900px;">
+    <script>
+        con = document.getElementById('con');
+        bir = document.getElementById('birth');
+        hello = document.getElementById('hello');
+        text = document.getElementById('text');
+        
+        let a = parseInt(prompt("숫자를 입력하세요"));
+
+       
+        function getSec(){
+            if(a<0){
+            setTimeout(function(){birth.innerHTML = "No No"},1000);
+            setTimeout(function(){text.innerHTML = "Text 0 or plus"},2000);
+            }
+            else{
+             con.innerHTML=a;
+             a--;
+             if(a<0){
+               bir.innerHTML = "Happy Cat Time!";
+               hello.style.display="block";
+               con.style.display="none";
+               
+             }
+            }
+             
+        }
+
+        setInterval(getSec,100);
+    </script>
+</body>
+</html>
