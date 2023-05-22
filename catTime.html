@@ -9,6 +9,8 @@
         html{
             font-size:200px;
             text-align: center;
+            width: 1920px;
+            height: 1080px;
         }
     </style>
 </head>
@@ -27,11 +29,7 @@
 
        
         function getSec(){
-            if(a<0){
-            setTimeout(function(){birth.innerHTML = "No No"},1000);
-            setTimeout(function(){text.innerHTML = "Text 0 or plus"},2000);
-            }
-            else{
+            
              con.innerHTML=a;
              a--;
              if(a<0){
@@ -42,7 +40,6 @@
              }
             }
              
-        }
 
         setInterval(getSec,100);
     </script>
